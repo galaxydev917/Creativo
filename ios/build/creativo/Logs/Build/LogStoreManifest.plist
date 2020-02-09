@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>3245760C-5C4D-4716-A33E-ADA16A72693A</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>3245760C-5C4D-4716-A33E-ADA16A72693A.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>creativo project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>creativo</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building workspace creativo with scheme creativo and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>602803061.278337</real>
+			<key>timeStoppedRecording</key>
+			<real>602803062.86940801</real>
+			<key>title</key>
+			<string>Building workspace creativo with scheme creativo and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>3245760C-5C4D-4716-A33E-ADA16A72693A</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
