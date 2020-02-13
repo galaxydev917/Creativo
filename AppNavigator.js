@@ -6,12 +6,16 @@ import OfferPage from './src/pages/OfferPage';
 import ProfilePage from './src/pages/ProfilePage';
 import WalkthroughPage from './src/pages/WalkthroughPage';
 import SignupPage from './src/pages/SignupPage';
+import SaleFreePage from './src/pages/SaleFreePage';
+import WantedPage from './src/pages/WantedPage';
+import PostGroupPage from './src/pages/PostGroupPage';
+import AddPostPage from './src/pages/AddPostPage';
 
 const RootStack = createStackNavigator({
   "HomePage": { 
     screen: HomePage,
     navigationOptions: {
-      title: 'profile',
+      title: 'sale free page',
       headerShown: false
     }
   },

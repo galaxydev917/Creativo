@@ -11,9 +11,9 @@ import {
   TouchableOpacity,
   View
 } from 'react-native';
-import { Divider } from 'react-native-elements'
-import Timeline from 'react-native-timeline-flatlist';
+import Dialog, {  DialogContent } from 'react-native-popup-dialog';import Timeline from 'react-native-timeline-flatlist';
 import {Card} from 'react-native-shadow-cards';
+import Icon from 'react-native-vector-icons/FontAwesome5';
 
 export default class HomePage extends Component{
   constructor(){
@@ -44,7 +44,7 @@ export default class HomePage extends Component{
         type : 2
       }
     ]
-    this.state = {selected: null}
+    this.state = {selected: null, popupVisible: false}
   } 
 
   onEventPress(data){
@@ -114,7 +114,15 @@ export default class HomePage extends Component{
                 <Text style={{fontSize : 18, fontWeight : '600', marginLeft : 10}}>Looking for help with table making</Text>
                 <Text>    ...</Text>
               </View>
-              <Text style={[styles.textDescription]}>Free collection of yarn, just need the sace!Free collection of yarn, just need the sace!Free collection of yarn, just need the sace!</Text>
+              <View style={{flexDirection : 'row', width : '100%', alignItems : 'flex-end'}}>
+                <View style={{width : '90%'}}>
+                  <Text style={[styles.textDescription]}>Free collection of yarn, just need the sace!Free collection of yarn, just need the sace!Free collection of yarn, just need the sace!  </Text>
+                </View>
+                <View style={{width : '10%', }}>
+                  <Icon name="plus-circle" style={{color : '#ce6b01'}} size={25}/>
+                </View>
+              </View>
+              
               {/* <Image style={{width : 20, height : 20}} source={require('../assets/imgs/addbtn.png')} />  */}
               <View style={styles.postfooter}>
                 <View style={styles.footercontent}>
@@ -192,6 +200,21 @@ export default class HomePage extends Component{
           <Text>More</Text>
         </View>        
       </View>
+      <Dialog
+        visible={this.state.popupVisible}
+      
+        containerStyle={{ justifyContent: 'flex-end', borderRadius : 40}}
+        dialogStyle={{backgroundColor : 'transparent'}}
+        width={screenWidth}
+        height={300}
+        onTouchInside={() => {
+        this.setState({ popupVisible: false });
+        }}
+        >
+        <DialogContent>
+          <Text>ssssss</Text>
+        </DialogContent>
+      </Dialog>        
       </SafeAreaView>
     );
   }  
@@ -202,7 +225,7 @@ const screenHeight = Math.round(Dimensions.get('window').height);
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+   flex: 1,
     width : screenWidth ,
     
   },
